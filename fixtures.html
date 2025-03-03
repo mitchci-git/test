@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures & Results | Riverside Rugby Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header (identical to index.html) -->
+    <header class="header">
+        <!-- ... same header code as index.html ... -->
+    </header>
+    
+    <!-- Page Banner -->
+    <section class="page-banner" style="background-image: url('images/fixtures-banner.jpg');">
+        <div class="container">
+            <h1>Fixtures & Results</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / Fixtures & Results
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="fixtures-filters">
+        <div class="container">
+            <div class="filters-wrapper">
+                <div class="filter-group">
+                    <label for="team-filter">Team:</label>
+                    <select id="team-filter" class="filter-select">
+                        <option value="all">All Teams</option>
+                        <option value="senior-men">Senior Men</option>
+                        <option value="women">Women</option>
+                        <option value="u18">Under 18s</option>
+                        <option value="u16">Under 16s</option>
+                        <option value="u14">Under 14s</option>
+                        <option value="veterans">Veterans</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="month-filter">Month:</label>
+                    <select id="month-filter" class="filter-select">
+                        <option value="all">All Months</option>
+                        <option value="nov-2023">November 2023</option>
+                        <option value="dec-2023">December 2023</option>
+                        <option value="jan-2024">January 2024</option>
+                        <option value="feb-2024">February 2024</option>
+                        <option value="mar-2024">March 2024</option>
+                        <option value="apr-2024">April 2024</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type-filter">Type:</label>
+                    <select id="type-filter" class="filter-select">
+                        <option value="all">All Types</option>
+                        <option value="league">League</option>
+                        <option value="cup">Cup</option>
+                        <option value="friendly">Friendly</option>
+                    </select>
+                </div>
+                <div class="filter-toggles">
+                    <button class="toggle-btn active" data-filter="upcoming">Upcoming</button>
+                    <button class="toggle-btn" data-filter="results">Results</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fixtures List -->
+    <section class="fixtures-list">
+        <div class="container">
+            <!-- Month Heading -->
+            <div class="month-heading">
+                <h2>November 2023</h2>
+            </div>
+
+            <!-- Fixtures Cards -->
+            <div class="fixtures-grid">
+                <!-- Fixture 1 -->
+                <div class="fixture-card upcoming" data-team="senior-men" data-month="nov-2023" data-type="league">
+                    <div class="fixture-date">
+                        <span class="day">SAT</span>
+                        <span class="date">18</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="fixture-details">
+                        <div class="fixture-teams">
+                            <div class="team home">
+                                <img src="images/logo.png" alt="Riverside Rugby">
+                                <span class="team-name">Riverside</span>
+                            </div>
+                            <div class="fixture-time">
+                                <span class="vs">VS</span>
+                                <span class="time">15:00</span>
+                            </div>
+                            <div class="team away">
+                                <img src="images/opponent-logo.png" alt="Oakwood RFC">
+                                <span class="team-name">Oakwood</span>
+                            </div>
+                        </div>
+                        <div class="fixture-meta">
+                            <div class="fixture-competition">
+                                <i class="fas fa-trophy"></i>
+                                <span>County Premier League</span>
+                            </div>
+                            <div class="fixture-venue">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Riverside Stadium</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture-actions">
+                        <a href="#" class="btn btn-sm btn-secondary">Match Details</a>
+                        <a href="#" class="btn btn-sm btn-outline calendar-btn" data-calendar-event="match-18-nov">
+                            <i class="far fa-calendar-plus"></i> Add to Calendar
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Fixture 2 -->
+                <div class="fixture-card upcoming" data-team="women" data-month="nov-2023" data-type="league">
+                    <div class="fixture-date">
+                        <span class="day">SUN</span>
+                        <span class="date">19</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="fixture-details">
+                        <div class="fixture-teams">
+                            <div class="team away">
+                                <img src="images/logo.png" alt="Riverside Rugby">
+                                <span class="team-name">Riverside</span>
+                            </div>
+                            <div class="fixture-time">
+                                <span class="vs">VS</span>
+                                <span class="time">14:00</span>
+                            </div>
+                            <div class="team home">
+                                <img src="images/opponent-logo2.png" alt="Westfield Women">
+                                <span class="team-name">Westfield</span>
+                            </div>
+                        </div>
+                        <div class="fixture-meta">
+                            <div class="fixture-competition">
+                                <i class="fas fa-trophy"></i>
+                                <span>Regional Women's League</span>
+                            </div>
+                            <div class="fixture-venue">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Westfield Park</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture-actions">
+                        <a href="#" class="btn btn-sm btn-secondary">Match Details</a>
+                        <a href="#" class="btn btn-sm btn-outline calendar-btn" data-calendar-event="match-19-nov">
+                            <i class="far fa-calendar-plus"></i> Add to Calendar
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Fixture 3 - Past result -->
+                <div class="fixture-card result" data-team="senior-men" data-month="nov-2023" data-type="league">
+                    <div class="fixture-date">
+                        <span class="day">SAT</span>
+                        <span class="date">04</span>
+                        <span class="month">NOV</span>
+                    </div>
+                    <div class="fixture-details">
+                        <div class="fixture-teams">
+                            <div class="team away">
+                                <img src="images/logo.png" alt="Riverside Rugby">
+                                <span class="team-name">Riverside</span>
+                                <span class="score win">32</span>
+                            </div>
+                            <div class="fixture-time">
+                                <span class="status">FT</span>
+                            </div>
+                            <div class="team home">
+                                <img src="images/opponent-logo3.png" alt="Southbank RFC">
+                                <span class="team-name">Southbank</span>
+                                <span class="score loss">15</span>
+                            </div>
+                        </div>
+                        <div class="fixture-meta">
+                            <div class="fixture-competition">
+                                <i class="fas fa-trophy"></i>
+                                <span>County Premier League</span>
+                            </div>
+                            <div class="fixture-venue">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Southbank Field</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixture-actions">
+                        <a href="#" class="btn btn-sm btn-secondary">Match Report</a>
+                        <a href="#" class="btn btn-sm btn-outline">
+                            <i class="fas fa-photo-video"></i> Gallery
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Additional fixtures would follow the same pattern -->
+            </div>
+
+            <!-- Month Heading -->
+            <div class="month-heading">
+                <h2>December 2023</h2>
+            </div>
+
+            <!-- December Fixtures -->
+            <div class="fixtures-grid">
+                <!-- Similar fixture cards for December -->
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <span class="page-numbers current">1</span>
+                <a href="#" class="page-numbers">2</a>
+                <a href="#" class="page-numbers">3</a>
+                <a href="#" class="next page-numbers">Next →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Integration Section -->
+    <section class="calendar-integration">
+        <div class="container">
+            <div class="calendar-card">
+                <div class="calendar-content">
+                    <h3>Never Miss a Match</h3>
+                    <p>Sync our fixtures with your personal calendar to stay updated with all matches and club events.</p>
+                    <div class="calendar-buttons">
+                        <a href="#" class="btn btn-primary">
+                            <i class="far fa-calendar-alt"></i> Subscribe to All Fixtures
+                        </a>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle">
+                                <i class="fas fa-caret-down"></i> Choose Team Calendar
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="#">Senior Men</a>
+                                <a href="#">Women</a>
+                                <a href="#">Under 18s</a>
+                                <a href="#">Under 16s</a>
+                                <a href="#">Under 14s</a>
+                                <a href="#">Veterans</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="calendar-image">
+                    <img src="images/calendar-device.png" alt="Calendar on devices">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (identical to index.html) -->
+    <footer class="footer">
+        <!-- ... same footer code as index.html ... -->
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/fixtures.js"></script>
+</body>
+</html>

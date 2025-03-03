@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riverside Rugby Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout-fixes.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Riverside Rugby Club Logo">
+                    <h1>Riverside <span>Rugby</span></h1>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="fixtures.html">Fixtures</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="membership.html">Membership</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav-buttons">
+                    <a href="membership.html" class="btn btn-primary">Join Now</a>
+                    <a href="login.html" class="btn btn-secondary">Member Login</a>
+                </div>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="slide active">
+                <img src="https://source.unsplash.com/1600x900/?rugby,sport" alt="Rugby match action">
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Welcome to <span>Riverside Rugby Club</span></h2>
+                        <p>Join our community of passionate rugby players and supporters</p>
+                        <div class="cta-buttons">
+                            <a href="membership.html" class="btn btn-primary">Become a Member</a>
+                            <a href="fixtures.html" class="btn btn-outline">View Fixtures</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/1600x900/?rugby,team" alt="Team celebration">
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>County Cup <span>Champions 2023</span></h2>
+                        <p>Congratulations to our first team on their impressive victory</p>
+                        <div class="cta-buttons">
+                            <a href="news.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://source.unsplash.com/1600x900/?rugby,training" alt="Youth training">
+                <div class="container">
+                    <div class="slide-content">
+                        <h2>Youth <span>Development Program</span></h2>
+                        <p>Building the next generation of rugby stars</p>
+                        <div class="cta-buttons">
+                            <a href="teams.html#youth" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Next Match Section -->
+    <section class="next-match">
+        <div class="container">
+            <div class="match-card">
+                <div class="match-header">
+                    <h3>Next Match</h3>
+                    <span class="match-league">County Premier League</span>
+                </div>
+                <div class="match-details">
+                    <div class="team home-team">
+                        <img src="https://via.placeholder.com/60x60?text=RRC" alt="Riverside Rugby">
+                        <h4>Riverside</h4>
+                    </div>
+                    <div class="match-info">
+                        <div class="match-date">
+                            <span class="day">SAT</span>
+                            <span class="date">18</span>
+                            <span class="month">NOV</span>
+                        </div>
+                        <div class="match-time">15:00</div>
+                        <a href="fixtures.html" class="btn btn-sm btn-primary">Match Details</a>
+                    </div>
+                    <div class="team away-team">
+                        <img src="https://via.placeholder.com/60x60?text=ORC" alt="Oakwood RFC">
+                        <h4>Oakwood</h4>
+                    </div>
+                </div>
+                <div class="match-venue">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Riverside Stadium, Grove Road</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest <span>News & Events</span></h2>
+                <a href="news.html" class="view-all">View All<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="news-grid">
+                <div class="news-card featured">
+                    <div class="news-image">
+                        <img src="https://source.unsplash.com/800x450/?rugby,coach" alt="New coaching staff">
+                        <div class="news-category">Club News</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">November 10, 2023</div>
+                        <h3>New Head Coach Appointed for 2024 Season</h3>
+                        <p>We're thrilled to welcome James Wilson as our new head coach, bringing with him a wealth of experience from his international career.</p>
+                        <a href="news-detail.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-2.jpg" alt="Youth tournament">
+                        <div class="news-category">Youth</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">November 5, 2023</div>
+                        <h3>U16s Win Regional Tournament</h3>
+                        <p>Our under-16 team delivered stellar performances to claim the regional championship.</p>
+                        <a href="news-detail.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="images/news-3.jpg" alt="Community event">
+                        <div class="news-category">Community</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">October 30, 2023</div>
+                        <h3>Annual Charity Match Raises £5,000</h3>
+                        <p>Thanks to our generous community, this year's charity match was an unprecedented success.</p>
+                        <a href="news-detail.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teams Section -->
+    <section class="teams-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span>Teams</span></h2>
+                <a href="teams.html" class="view-all">View All Teams<i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="teams-grid">
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-senior.jpg" alt="Senior Men's Team">
+                    </div>
+                    <div class="team-content">
+                        <h3>Senior Men</h3>
+                        <p>Our flagship team competing in the County Premier League</p>
+                        <a href="teams.html#senior-men" class="btn btn-outline">Team Details</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-women.jpg" alt="Women's Team">
+                    </div>
+                    <div class="team-content">
+                        <h3>Women</h3>
+                        <p>A growing team with impressive regional achievements</p>
+                        <a href="teams.html#women" class="btn btn-outline">Team Details</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-youth.jpg" alt="Youth Teams">
+                    </div>
+                    <div class="team-content">
+                        <h3>Youth</h3>
+                        <p>Developing young talent from U8 through to U18</p>
+                        <a href="teams.html#youth" class="btn btn-outline">Team Details</a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="images/team-veterans.jpg" alt="Veterans Team">
+                    </div>
+                    <div class="team-content">
+                        <h3>Veterans</h3>
+                        <p>The spirit of rugby continues for our over-35 players</p>
+                        <a href="teams.html#veterans" class="btn btn-outline">Team Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section class="sponsors-section">
+        <div class="container">
+            <h2>Our <span>Sponsors</span></h2>
+            <div class="sponsors-slider">
+                <div class="sponsor">
+                    <img src="images/sponsor-1.png" alt="Jenkins Construction">
+                </div>
+                <div class="sponsor">
+                    <img src="images/sponsor-2.png" alt="City Fitness">
+                </div>
+                <div class="sponsor">
+                    <img src="images/sponsor-3.png" alt="Riverside Brewery">
+                </div>
+                <div class="sponsor">
+                    <img src="images/sponsor-4.png" alt="Phillips Auto Group">
+                </div>
+                <div class="sponsor">
+                    <img src="images/sponsor-5.png" alt="County Insurance">
+                </div>
+            </div>
+            <div class="become-sponsor">
+                <p>Interested in sponsoring Riverside Rugby Club?</p>
+                <a href="contact.html#sponsorship" class="btn btn-primary">Become a Sponsor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span>Join Our Club?</span></h2>
+                <p>Whether you're an experienced player or new to rugby, we welcome players of all abilities.</p>
+                <div class="cta-buttons">
+                    <a href="membership.html" class="btn btn-primary">Join Now</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Riverside Rugby Club Logo">
+                    <h3>Riverside Rugby Club</h3>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="teams.html">Teams</a></li>
+                            <li><a href="fixtures.html">Fixtures</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="membership.html">Membership</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="club-history.html">Club History</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="documents.html">Club Documents</a></li>
+                            <li><a href="sponsors.html">Sponsors</a></li>
+                            <li><a href="gallery.html">Photo Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Us</h4>
+                        <address>
+                            <p><i class="fas fa-map-marker-alt"></i> Riverside Stadium, Grove Road, Riverside, RV1 2TD</p>
+                            <p><i class="fas fa-phone"></i> (01234) 567890</p>
+                            <p><i class="fas fa-envelope"></i> info@riversiderugby.com</p>
+                        </address>
+                        <div class="social-links">
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Newsletter</h4>
+                        <p>Subscribe to our newsletter to stay updated with club news and events.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Riverside Rugby Club. All Rights Reserved.</p>
+                <div class="footer-policies">
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="safeguarding.html">Safeguarding</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
